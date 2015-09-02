@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  round_and_full: MyString
+  bottom_and_full: MyString
+  wide: MyString
+  wide_and_full: MyString
+
+two:
+  round_and_full: MyString
+  bottom_and_full: MyString
+  wide: MyString
+  wide_and_full: MyString

@@ -1,0 +1,123 @@
+<h2>Logo/Brand?</h2>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+   
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="carousel.css" rel="stylesheet">
+    <link href="styles/ihover.css" rel="stylesheet">
+  </head>
+
+    
+
+      <div id="Carousel" class="carousel slide col-sm-13 col-offset-2">
+
+        <ol class="carousel-indicators">
+            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel" data-slide-to="1"></li>
+            <li data-target="#Carousel" data-slide-to="2"></li>
+            <li data-target="#Carousel" data-slide-to="3"></li>
+        </ol>
+        <br>
+        <div class="carousel-inner" role="listbox">
+          
+            <div class="item active">
+                <div class="text-center">
+                  <p>How are your shoulder straps?</p>
+                  <br>
+
+                  
+                  <label for="straps[]">How are your shoulder straps?</label>
+                  <br><%= check_box_tag 'straps[]', 'digging_in' %> Digging In
+                  <br><%= check_box_tag 'straps[]', 'falling_off' %> Falling Off
+                  <br><%= check_box_tag 'straps[]', 'just_right' %> Just Right
+                <%= link_to "../page/about" do %>
+               <!-- <%= image_tag '#' %>-->
+              <% end %>
+              </div>
+              <br>
+              <br>
+              <p><a class="btn btn-sm btn-primary" href="../page/about" role="button">Next <span class="glyphicon glyphicon-hand-right"></span></a></p>
+                <p></p>
+            </div>
+           <div class="item">
+                <div class="text-center">
+                  <p>Survey Question 2</p>
+                  <label for="shapes[]">What is your shape?</label>
+                  <br><%= check_box_tag 'shapes[]', 'digging_in' %> Round and Full
+                  <br><%= check_box_tag 'shapes[]', 'falling_off' %> Bottom and Full
+                  <br><%= check_box_tag 'shapes[]', 'just_right' %> Wide 
+                  <br><%= check_box_tag 'shapes[]', 'just_right' %> Wide and Full
+                <%= link_to "../page/about" do %>
+                <!-- <%= image_tag '#' %>-->
+                <% end %>
+                </div>
+              <br>
+              <br>
+              <p><a class="btn btn-sm btn-primary" href="../page/about" role="button">Next<span class="glyphicon glyphicon-hand-right"></span></a></p>
+                <p></p>
+            </div>
+           <div class="item">
+                <div class="text-center">
+                  <p>Survey Question 3</p>
+                  <label for="shapes[]">What is your shape?</label>
+                  <br><%= check_box_tag 'shapes[]', 'digging_in' %> Round and Full
+                  <br><%= check_box_tag 'shapes[]', 'falling_off' %> Bottom and Full
+                  <br><%= check_box_tag 'shapes[]', 'just_right' %> Wide 
+                  <br><%= check_box_tag 'shapes[]', 'just_right' %> Wide and Full
+                <%= link_to "../page/about" do %>
+                <!--<%= image_tag '#' %>-->
+                <% end %>
+                </div>
+              <br>
+              <br>
+              <p><a class="btn btn-sm btn-primary" href="../page/about" role="button">Next <span class="glyphicon glyphicon-hand-right"></span></a></p>
+                <p></p>
+            </div>
+             <div class="item">
+                <div class="text-center">
+                  <p>Survey Question 4</p>
+                <%= link_to "../page/about" do %>
+                <!-- <%= image_tag '#' %>-->
+                <% end %>
+                </div>
+              <br>
+              <br>
+              <p><a class="btn btn-sm btn-primary" href="../page/about" role="button">Next <span class="glyphicon glyphicon-hand-right"></span></a></p>
+                <p></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="carouselButtons">
+        <button id="playButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-play"></span>
+        </button>
+        <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-pause"></span>
+        </button>
+        </div>
+
+        <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+</div>
+
+

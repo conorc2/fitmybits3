@@ -1,0 +1,11 @@
+applications:
+- services:
+  - ClearDB MySQL Database-5p
+  disk_quota: 1024M
+  host: clearapp4
+  name: clearapp4
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 256M
+  buildpack: https://github.com/ibmdb/db2rubybuildpack
